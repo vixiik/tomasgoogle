@@ -17,6 +17,10 @@ a:hover { text-decoration: underline; }
 .search-button { font-size: 14px; color: #3c4043; background: #f8f9fa; border: 1px solid #f8f9fa; border-radius: 4px; padding: 10px 16px; cursor: pointer; }
 .search-button:hover { box-shadow: 0 1px 1px rgba(0,0,0,.1); border-color: #dadce0; }
 .footer { background: #f2f2f2; color: #70757a; padding: 18px 30px; font-size: 13px; }
+.validator-links { display: flex; gap: 10px; align-items: center; margin-top: 12px; }
+.validator-links a { display: inline-flex; width: 36px; height: 36px; align-items: center; justify-content: center; border: 1px solid #dadce0; border-radius: 6px; color: #5f6368; background: #fff; }
+.validator-links a:hover, .validator-links a:focus-visible { color: #1a73e8; border-color: #1a73e8; }
+.validator-links svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .image-page .home-main { padding-top: 105px; }
 .image-label { font-size: 16px; letter-spacing: 0; color: #4285f4; margin-left: 10px; font-weight: 400; }
 .advanced-page { min-height: 100vh; display: flex; flex-direction: column; }
