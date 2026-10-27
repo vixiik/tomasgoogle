@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ukázka formulářových prvků</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="advanced-page">
+  <header class="advanced-header">
+    <a class="mini-logo" href="index.html" aria-label="Google home"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></a>
+    <nav class="demo-header-links" aria-label="Hlavní navigace">
+      <a class="top-link" href="index.html">Google Search</a>
+      <a class="top-link" href="images.html">Images</a>
+      <a class="top-link" href="advanced.html">Advanced Search</a>
+    </nav>
+  </header>
+  <main class="form-demo-main">
+    <h1>Ukázka formulářových prvků</h1>
+    <p class="form-demo-intro">Přehled běžných HTML ovládacích prvků formuláře. Stránka slouží jako ukázka různých typů vstupů.</p>
+    <form class="form-demo-grid">
+      <section class="form-demo-card">
+        <h2>Textové a číselné vstupy</h2>
+        <div class="demo-field">
+          <label for="demo-name">Text</label>
+          <input id="demo-name" name="name" type="text" placeholder="Zadejte jméno">
+        </div>
+        <div class="demo-field">
+          <label for="demo-search">Vyhledávání</label>
+          <input id="demo-search" name="search" type="search" placeholder="Hledat">
+        </div>
+        <div class="demo-field">
+          <label for="demo-email">E-mail</label>
+          <input id="demo-email" name="email" type="email" placeholder="jmeno@example.cz">
+        </div>
+        <div class="demo-field">
+          <label for="demo-password">Heslo</label>
+          <input id="demo-password" name="password" type="password" placeholder="Heslo">
+        </div>
+        <div class="demo-field">
+          <label for="demo-tel">Telefon</label>
+          <input id="demo-tel" name="telephone" type="tel" placeholder="+420 123 456 789">
+        </div>
+        <div class="demo-field">
+          <label for="demo-url">Webová adresa</label>
+          <input id="demo-url" name="website" type="url" placeholder="https://example.cz">
+        </div>
+        <div class="demo-field">
+          <label for="demo-number">Číslo</label>
+          <input id="demo-number" name="quantity" type="number" min="0" max="100" value="5">
+        </div>
+        <div class="demo-field">
+          <label for="demo-range">Rozsah: <output id="range-value" for="demo-range">50</output></label>
+          <input id="demo-range" name="range" type="range" min="0" max="100" value="50">
+        </div>
+      </section>
+      <section class="form-demo-card">
+        <h2>Datum, čas a soubory</h2>
+        <div class="demo-field">
+          <label for="demo-date">Datum</label>
+          <input id="demo-date" name="date" type="date">
+        </div>
+        <div class="demo-field">
+          <label for="demo-time">Čas</label>
+          <input id="demo-time" name="time" type="time">
+        </div>
+        <div class="demo-field">
+          <label for="demo-datetime">Datum a čas</label>
+          <input id="demo-datetime" name="datetime" type="datetime-local">
+        </div>
+        <div class="demo-field">
+          <label for="demo-month">Měsíc</label>
+          <input id="demo-month" name="month" type="month">
+        </div>
+        <div class="demo-field">
+          <label for="demo-week">Týden</label>
+          <input id="demo-week" name="week" type="week">
+        </div>
+        <div class="demo-field">
+          <label for="demo-color">Barva</label>
+          <input id="demo-color" name="color" type="color" value="#4285f4">
+        </div>
+        <div class="demo-field">
+          <label for="demo-file">Soubor</label>
+          <input id="demo-file" name="file" type="file">
+        </div>
+        <div class="demo-field">
+          <label for="demo-files">Více souborů</label>
+          <input id="demo-files" name="files" type="file" multiple>
+        </div>
+      </section>
+      <section class="form-demo-card">
+        <h2>Výběr a možnosti</h2>
+        <div class="demo-field">
+          <label for="demo-select">Rozbalovací nabídka</label>
+          <select id="demo-select" name="category">
+            <option value="">Vyberte možnost</option>
+            <optgroup label="Ovoce">
+              <option value="apple">Jablko</option>
+              <option value="pear">Hruška</option>
+            </optgroup>
+            <optgroup label="Zelenina">
+              <option value="carrot">Mrkev</option>
+              <option value="tomato">Rajče</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="demo-field">
+          <label for="demo-multiple-select">Výběr více možností</label>
+          <select id="demo-multiple-select" name="interests" multiple size="4">
+            <option value="design">Design</option>
+            <option value="coding">Programování</option>
+            <option value="music">Hudba</option>
+            <option value="travel">Cestování</option>
+          </select>
+        </div>
+        <div class="demo-field">
+          <label for="demo-datalist">Pole s našeptávačem</label>
+          <input id="demo-datalist" name="browser" list="browser-options" placeholder="Začněte psát">
+          <datalist id="browser-options">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+          </datalist>
+        </div>
+        <fieldset class="demo-field">
+          <legend>Checkboxy</legend>
+          <label><input type="checkbox" name="newsletter" value="yes"> Odebírat novinky</label>
+          <label><input type="checkbox" name="terms" value="accepted"> Souhlasím s podmínkami</label>
+        </fieldset>
+        <fieldset class="demo-field">
+          <legend>Radio tlačítka</legend>
+          <label><input type="radio" name="contact" value="email"> E-mail</label>
+          <label><input type="radio" name="contact" value="phone"> Telefon</label>
+        </fieldset>
+      </section>
+      <section class="form-demo-card">
+        <h2>Doplňující prvky</h2>
+        <div class="demo-field">
+          <label for="demo-message">Víceřádkový text</label>
+          <textarea id="demo-message" name="message" rows="5" placeholder="Napište zprávu"></textarea>
+        </div>
+        <div class="demo-field">
+          <label for="demo-readonly">Pouze pro čtení</label>
+          <input id="demo-readonly" name="readonly" type="text" value="Tento údaj nelze upravit" readonly>
+        </div>
+        <div class="demo-field">
+          <label for="demo-disabled">Neaktivní pole</label>
+          <input id="demo-disabled" name="disabled" type="text" value="Neaktivní" disabled>
+        </div>
+        <div class="demo-field">
+          <label for="demo-progress">Průběh</label>
+          <progress id="demo-progress" value="65" max="100">65 %</progress>
+          <small>65 % dokončeno</small>
+        </div>
+        <div class="demo-field">
+          <label for="demo-meter">Měřítko</label>
+          <meter id="demo-meter" min="0" max="100" low="30" high="80" optimum="90" value="72">72 z 100</meter>
+        </div>
+        <div class="demo-field">
+          <label for="demo-output">Výstup</label>
+          <output id="demo-output" name="result">Ukázkový výsledek</output>
+        </div>
+        <div class="demo-field">
+          <span class="demo-field-label">Tlačítka</span>
+          <div class="demo-button-row">
+            <button class="demo-button demo-button-primary" type="button">Tlačítko</button>
+            <button class="demo-button" type="reset">Reset</button>
+            <button class="demo-button" type="button" disabled>Neaktivní</button>
+          </div>
+        </div>
+      </section>
+    </form>
+  </main>
+  <footer class="advanced-footer">
+    <span>Ukázka HTML formulářových prvků</span>
+    <a class="citations-link" href="https://github.com/vixiik/tomasgoogle/blob/main/citace.md" target="_blank" rel="noopener noreferrer">Citace a zdroje</a>
+    <nav class="validator-links" aria-label="Validace stránky">
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvixiik.github.io%2Ftomasgoogle%2Fform-elements.html" target="_blank" rel="noopener noreferrer" aria-label="Validovat HTML" title="Validovat HTML">
+        <img src="https://validator.w3.org/nu/icon.png" width="16" height="16" alt="Nu HTML Checker">
+        <span>HTML</span>
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvixiik.github.io%2Ftomasgoogle%2Fstyles.css" target="_blank" rel="noopener noreferrer" aria-label="Validovat CSS" title="Validovat CSS">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" width="88" height="31" alt="Valid CSS!">
+        <span>CSS</span>
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
